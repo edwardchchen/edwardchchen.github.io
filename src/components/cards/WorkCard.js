@@ -9,13 +9,24 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import {Container, Grid} from "@mui/material";
+import {Avatar, Container, Grid, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import List from "@mui/material/List";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import {Tag} from "../Tag";
+
 var cardStyle = {
     display: 'block',
     width: '60vw',
     transitionDuration: '0.3s',
     border: "none",
     boxShadow: "none"
+}
+
+class FolderIcon extends React.Component {
+    render() {
+        return null;
+    }
 }
 
 export default function WorkCard(props) {
@@ -42,13 +53,22 @@ export default function WorkCard(props) {
                             {props.date}
                         </Typography>
                 </Grid>
+                    <List align={"left"}>
+                        {props.contents.map((bullet, index) =>
+                            <ListItem align={"left"}>
+                                <ArrowRightIcon />
+                                <Typography variant={"subtitle2"}>
+                                    {bullet}
+                                </Typography>
+                            </ListItem>
 
+                        )}
+                    </List>
+                <Grid item xs={12} align={"left"}>
+                    <Tag tags={props.tags}/>
+                </Grid>
 
-            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                </CardContent>
-            </Box>
-            </Grid>
+                </Grid>
         </Card>
     );
 }

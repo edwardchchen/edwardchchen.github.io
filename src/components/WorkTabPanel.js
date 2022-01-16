@@ -9,7 +9,7 @@ import ubcLogo from "../assets/logos/cicLogo.png";
 import awsLogo from "../assets/logos/awsLogo.png";
 
 import {Container} from "@mui/material";
-
+const cicTags = ["React", "AWS", "Javascript","CSS"]
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
     return (
@@ -67,13 +67,16 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={0}>
                 <Container maxWidth={"xl"}>
                 <WorkCard image={awsLogo} company={"Amazon Web Services"}
-                          jobTitle={"Professional service consultant intern"} date={"Jun 2022 - Sep 2022"}/>
+                          jobTitle={"Professional service consultant intern"} date={"Jun 2022 - Sep 2022"}
+                          contents={[]} tags={[]}/>
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Container maxWidth={"xl"}>
                     <WorkCard image={ubcLogo} company={"UBC Cloud Innovation Centre, powered by AWS"}
-                              jobTitle={"Developer Intern"} date={"Jan 2021 - Aug 2021"}/>
+                              jobTitle={"Developer Intern"} date={"Jan 2021 - Aug 2021"}
+                              contents={[""]}
+                    tags={cicTags}/>
                 </Container>
             </TabPanel>
         </Box>
