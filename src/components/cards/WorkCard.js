@@ -30,7 +30,6 @@ class FolderIcon extends React.Component {
 }
 
 export default function WorkCard(props) {
-    const theme = useTheme();
 
     return (
         <Card style={cardStyle}>

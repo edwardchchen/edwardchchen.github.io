@@ -1,35 +1,19 @@
 import ProjectCard from "../../components/cards/ProjectCard";
 import cat  from "../../assets/cat.png"
 import {Container, Grid, Typography} from "@mui/material";
+import ProjectTabs from "../../components/ProjectTabPanel";
 export default function Project(){
 
     return(
         <Container maxWidth={"lg"}>
-            <Typography>
-                Projects
+            <Typography align={"left"}>
+                Some things I've built
             </Typography>
             <Grid container spacing={1}>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
+                <Grid item xs={12}>
+                    <ProjectTabs/>
                 </Grid>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
-                </Grid>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
-                </Grid>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
-                </Grid>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
-                </Grid>
-                <Grid item xs={4}>
-                    <ProjectCard title={"EDWRAD"} content={"image"} image={cat}/>
-                </Grid>
-
             </Grid>
-
         </Container>
 
     )

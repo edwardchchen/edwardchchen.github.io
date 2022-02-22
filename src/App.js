@@ -2,19 +2,32 @@ import logo from './logo.svg';
 import './App.css';
 import {HashRouter, Redirect, Route, Routes} from 'react-router-dom';
 import Home from "./pages/home/Home";
-import Navbar from "./components/Navbar";
 import PermanentDrawerLeft from "./components/Sidebar";
+import {createTheme} from "@mui/material";
+import {ThemeProvider} from "@emotion/react";
 
+const themeDefault = createTheme({
+    palette: {
+        background: {
+            default: "#1F2833"
+        },
+        text: {
+            primary: "#FFFFFF"
+        }
+    }
+});
 
 function App() {
   return (
-    <div className="App">
-          <PermanentDrawerLeft/>
-          <Routes>
-              <Route path="/" element={<Home />}/>
-          </Routes>
+      <ThemeProvider theme={themeDefault}>
+          <div className="App">
+              <PermanentDrawerLeft/>
+              <Routes>
+                  <Route path="/" element={<Home />}/>
+              </Routes>
+          </div>
+      </ThemeProvider>
 
-    </div>
   );
 }
 

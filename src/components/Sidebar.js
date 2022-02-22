@@ -19,8 +19,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 const drawerWidth = 100;
-const githubLink = "https://github.com/ecaiyonotbad";
-const linkedInLink = "https://www.linkedin.com/in/edwardchen29";
+const githubLink = process.env.REACT_APP_GITHUB_URL;
+const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
+
 export default function PermanentDrawerLeft() {
     return (
         <Box sx={{ display: 'flex' }}>

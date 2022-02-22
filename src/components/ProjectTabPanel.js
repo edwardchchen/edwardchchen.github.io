@@ -9,6 +9,7 @@ import ubcLogo from "../assets/logos/cicLogo.png";
 import awsLogo from "../assets/logos/awsLogo.png";
 
 import {Container} from "@mui/material";
+import ProjectCard from "./cards/ProjectCard";
 const cicTags = ["React", "AWS", "Javascript","CSS"]
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -42,7 +43,7 @@ function a11yProps(index) {
     };
 }
 
-export default function VerticalTabs() {
+export default function ProjectTabs() {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -51,7 +52,7 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 500 }}
+            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
         >
             <Tabs
                 orientation="vertical"
@@ -61,27 +62,34 @@ export default function VerticalTabs() {
                 aria-label="Vertical tabs example"
                 sx={{ borderRight: 1, borderColor: 'divider' }}
             >
-                <Tab label="AWS" {...a11yProps(0)} />
-                <Tab label="UBC" {...a11yProps(1)} />
+                <Tab label="Lottery analyzer" {...a11yProps(0)} />
+                <Tab label="Todo List" {...a11yProps(1)} />
+                <Tab label="NBA Stats" {...a11yProps(2)} />
+
             </Tabs>
             <TabPanel value={value} index={0}>
                 <Container maxWidth={"xl"}>
-                <WorkCard image={awsLogo} company={"Amazon Web Services"}
+                <ProjectCard company={"Amazon Web Services"}
                           jobTitle={"Professional service consultant intern"} date={"Jun 2022 - Sep 2022"}
-                          contents={[]} tags={[]}/>
+                          contents={[]} tags={["Python","Python turtle"]}/>
+
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Container maxWidth={"xl"}>
-                    <WorkCard image={ubcLogo} company={"UBC Cloud Innovation Centre, powered by AWS"}
-                              jobTitle={"Developer Intern"} date={"Jan 2021 - Aug 2021"}
-                              contents={["Co-developed open source projects (Student Connect App, Amazon Location Service Demo, Vaccine Distribution)",
-                              "Attended meetings with customers to present development progress",
-                                  "Wrote documentation on the architecture, pricing and deployment of the projects that I have involved in",
-                              "Assisted in the live demo of the Student Workshop: AWS RoboMaker: Building robotics applications from zero to hero"]}
-                    tags={cicTags}/>
+                    <ProjectCard company={"Amazon Web Services"}
+                                 jobTitle={"Professional service consultant intern"} date={"Jun 2022 - Sep 2022"}
+                                 contents={[]} tags={["Java","JavaFx","CSS"]}/>
                 </Container>
             </TabPanel>
+            <TabPanel value={value} index={2}>
+                <Container maxWidth={"xl"}>
+                    <ProjectCard company={"Amazon Web Services"}
+                                 jobTitle={"Professional service consultant intern"} date={"Jun 2022 - Sep 2022"}
+                                 contents={[]} tags={["Java","Java Swing","OracleDB","SQL"]}/>
+                </Container>
+            </TabPanel>
+
         </Box>
     );
 }
