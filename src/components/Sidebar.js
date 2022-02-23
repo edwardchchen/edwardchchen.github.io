@@ -18,18 +18,22 @@ import Button from "@mui/material/Button";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+
 const drawerWidth = 100;
 const githubLink = process.env.REACT_APP_GITHUB_URL;
 const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
 
 export default function PermanentDrawerLeft() {
     return (
-        <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
-            <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{display: 'flex', backgroundColor: "#1F2833"}}>
+            <CssBaseline/>
+            <Box sx={{flexGrow: 1, backgroundColor: "#1F2833"}}>
                 <AppBar
                     position="fixed"
-                    sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+                    sx={{
+                        width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px`, backgroundColor: "#1F2833",
+                        boxShadow: "None"
+                    }}
                 >
                     <Toolbar>
                         <IconButton
@@ -37,9 +41,9 @@ export default function PermanentDrawerLeft() {
                             edge="start"
                             color="inherit"
                             aria-label="menu"
-                            sx={{ mr: 2 }}
+                            sx={{mr: 2}}
                         >
-                            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                            <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                                 Edward Chen
                             </Typography>
                         </IconButton>
@@ -52,23 +56,27 @@ export default function PermanentDrawerLeft() {
             <Drawer
                 sx={{
                     width: drawerWidth,
+                    backgroundColor: "#1F2833",
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
                         width: drawerWidth,
                         boxSizing: 'border-box',
+                        borderColor: "#66FCF1",
+                        borderWidth: "4px",
+                        backgroundColor: "#1F2833",
                     },
                 }}
                 variant="permanent"
                 anchor="left"
             >
-                <Toolbar />
-                <List>
-                    <IconButton>
-                        <GitHubIcon fontSize={"large"} onClick={event =>  window.open(githubLink, "_blank")}
+                <Toolbar sx={{backgroundColor: "#1F2833"}}/>
+                <List sx={{backgroundColor: "#1F2833"}}>
+                    <IconButton sx={{color: "#FFFFFF"}}>
+                        <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}
                         />
                     </IconButton>
-                    <IconButton>
-                        <LinkedInIcon fontSize={"large"} onClick={event =>  window.open(linkedInLink, "_blank")}/>
+                    <IconButton sx={{color: "#FFFFFF"}}>
+                        < LinkedInIcon fontSize={"large"} onClick={event => window.open(linkedInLink, "_blank")}/>
                     </IconButton>
                     {/*<IconButton>*/}
                     {/*    <EmailIcon fontSize={"large"}/>*/}
