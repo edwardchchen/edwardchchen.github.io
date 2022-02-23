@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
+import {useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -18,56 +18,53 @@ import {Tag} from "../Tag";
 var cardStyle = {
     display: 'block',
     width: '60vw',
-    transitionDuration: '0.3s',
-    border: "none",
+    backgroundColor: "#1F2833",
+    borderWidth: "5px",
+    borderColor: "#66FCF1",
     boxShadow: "none"
-}
-
-class FolderIcon extends React.Component {
-    render() {
-        return null;
-    }
 }
 
 export default function WorkCard(props) {
 
     return (
-        <Card style={cardStyle}>
-            <Grid container spacing={1}>
-                <Grid item xs={2}>
-                    <CardMedia
-                        component="img"
-                        sx={{ width: 90 }}
-                        image={props.image}
-                    />
-                </Grid>
-                <Grid item xs={10}>
-                    <Typography  variant="subtitle1" align={"left"}>
-                        {props.company}
-                    </Typography>
-                    <Typography  variant="subtitle2" align={"left"}>
-                        {props.jobTitle}
-                    </Typography>
-                    <Typography  variant="subtitle2" align={"left"}>
+        <Box sx={{color: "#66FCF1", borderBottom: 3}}>
+
+            <Card style={cardStyle}>
+                <Grid container spacing={1}>
+                    <Grid item xs={2}>
+                        <CardMedia
+                            component="img"
+                            sx={{width: 90}}
+                            image={props.image}
+                        />
+                    </Grid>
+                    <Grid item xs={10}>
+                        <Typography variant="subtitle1" align={"left"}>
+                            {props.company}
+                        </Typography>
+                        <Typography variant="subtitle2" align={"left"}>
+                            {props.jobTitle}
+                        </Typography>
+                        <Typography variant="subtitle2" align={"left"}>
                             {props.date}
                         </Typography>
-                </Grid>
+                    </Grid>
                     <List align={"left"}>
                         {props.contents.map((bullet, index) =>
                             <ListItem align={"left"}>
-                                <ArrowRightIcon />
+                                <ArrowRightIcon/>
                                 <Typography variant={"subtitle2"}>
                                     {bullet}
                                 </Typography>
                             </ListItem>
-
                         )}
                     </List>
-                <Grid item xs={12} align={"left"}>
-                    <Tag tags={props.tags}/>
-                </Grid>
+                    <Grid item xs={12} align={"left"} sx={{marginBottom: "20px"}}>
+                        <Tag tags={props.tags}/>
+                    </Grid>
 
                 </Grid>
-        </Card>
+            </Card>
+        </Box>
     );
 }

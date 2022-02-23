@@ -1,17 +1,20 @@
 import ProjectCard from "../../components/cards/ProjectCard";
-import cat  from "../../assets/cat.png"
+import cat from "../../assets/cat.png"
 import {Container, Grid, Typography} from "@mui/material";
 import ProjectTabs from "../../components/ProjectTabPanel";
-export default function Project(){
+import * as React from "react";
 
-    return(
-        <Container maxWidth={"lg"}>
-            <Typography align={"left"}>
+export default function Project() {
+
+    return (
+        <Container sx={{height: "90vh", width: "70vw", marginTop: "0vh"}}>
+            <Typography component="h3" variant="h4" align="left" color="textPrimary" gutterBottom
+                        sx={{color: "#66FCF1"}}>
                 Some things I've built
             </Typography>
             <Grid container spacing={1}>
                 <Grid item xs={12}>
-                    <ProjectTabs/>
+                    {/*<ProjectTabs/>*/}
                 </Grid>
             </Grid>
         </Container>

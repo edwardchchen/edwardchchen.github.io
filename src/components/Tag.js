@@ -1,26 +1,26 @@
 import Button from "@mui/material/Button";
 
 var StyledButton = {
-    background: '#02a7de',
+    background: '#45A29E',
     borderRadius: 3,
     border: 0,
     color: 'white',
     height: 20,
     padding: '15px',
-    marginRight:'5px',
-    marginTop:'10px',
+    marginRight: '5px',
+    marginTop: '10px',
     '&:hover': {
-        color: "#02a7de",
+        color: "#FFFFFF",
     },
     textTransform: 'capitalize',
-    fontSize:'11px',
-    fontWeight:"500"
+    fontSize: '11px',
+    fontWeight: "500"
 
 }
 
-export function Tag(props){
+export function Tag(props) {
     const {tags} = props
-    return(
+    return (
         tags ?
             <>
                 {tags.map((category, index) =>
