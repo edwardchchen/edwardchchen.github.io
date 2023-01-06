@@ -5,6 +5,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const githubLink = process.env.REACT_APP_GITHUB_URL;
+const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
 
 export default function Navbar() {
     return (
@@ -23,6 +28,13 @@ export default function Navbar() {
                         </Typography>
                     </IconButton>
                     <Button color="inherit">Resume</Button>
+                    <IconButton sx={{color: "#FFFFFF"}}>
+                        <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}
+                        />
+                    </IconButton>
+                    <IconButton sx={{color: "#FFFFFF"}}>
+                        < LinkedInIcon fontSize={"large"} onClick={event => window.open(linkedInLink, "_blank")}/>
+                    </IconButton>
 
                 </Toolbar>
 

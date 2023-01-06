@@ -10,7 +10,7 @@ import todoList from "../../assets/projectImages/todoList.png"
 export default function Project() {
 
     return (
-        <Container sx={{height: "90vh", width: "70vw", marginTop: "20vh"}}>
+        <Container sx={{marginTop: "20vh"}}>
             <Typography component="h3" variant="h4" align="left" color="textPrimary" gutterBottom
                         sx={{color: "#66FCF1"}}>
                 Some things I've built

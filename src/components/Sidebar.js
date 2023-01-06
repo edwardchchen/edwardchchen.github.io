@@ -58,41 +58,48 @@ export default function PermanentDrawerLeft() {
                             </Typography>
                         </IconButton>
                         <Button color="inherit">Resume</Button>
+                        <IconButton sx={{color: "#FFFFFF"}}>
+                            <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}
+                            />
+                        </IconButton>
+                        <IconButton sx={{color: "#FFFFFF"}}>
+                            < LinkedInIcon fontSize={"large"} onClick={event => window.open(linkedInLink, "_blank")}/>
+                        </IconButton>
 
                     </Toolbar>
 
                 </AppBar>
             </Box>
-            <Drawer
-                sx={{
-                    width: drawerWidth,
-                    backgroundColor: "#1F2833",
-                    flexShrink: 0,
-                    '& .MuiDrawer-paper': {
-                        width: drawerWidth,
-                        boxSizing: 'border-box',
-                        borderColor: "#66FCF1",
-                        borderWidth: "4px",
-                        backgroundColor: "#1F2833",
-                    },
-                }}
-                variant="permanent"
-                anchor="left"
-            >
-                <Toolbar sx={{backgroundColor: "#1F2833"}}/>
-                <List sx={{backgroundColor: "#1F2833"}}>
-                    <IconButton sx={{color: "#FFFFFF"}}>
-                        <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}
-                        />
-                    </IconButton>
-                    <IconButton sx={{color: "#FFFFFF"}}>
-                        < LinkedInIcon fontSize={"large"} onClick={event => window.open(linkedInLink, "_blank")}/>
-                    </IconButton>
-                    {/*<IconButton>*/}
-                    {/*    <EmailIcon fontSize={"large"}/>*/}
-                    {/*</IconButton>*/}
-                </List>
-            </Drawer>
+            {/*<Drawer*/}
+            {/*    sx={{*/}
+            {/*        width: drawerWidth,*/}
+            {/*        backgroundColor: "#1F2833",*/}
+            {/*        flexShrink: 0,*/}
+            {/*        '& .MuiDrawer-paper': {*/}
+            {/*            width: drawerWidth,*/}
+            {/*            boxSizing: 'border-box',*/}
+            {/*            borderColor: "#66FCF1",*/}
+            {/*            borderWidth: "4px",*/}
+            {/*            backgroundColor: "#1F2833",*/}
+            {/*        },*/}
+            {/*    }}*/}
+            {/*    variant="permanent"*/}
+            {/*    anchor="left"*/}
+            {/*>*/}
+            {/*    <Toolbar sx={{backgroundColor: "#1F2833"}}/>*/}
+            {/*    <List sx={{backgroundColor: "#1F2833"}}>*/}
+            {/*        <IconButton sx={{color: "#FFFFFF"}}>*/}
+            {/*            <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}*/}
+            {/*            />*/}
+            {/*        </IconButton>*/}
+            {/*        <IconButton sx={{color: "#FFFFFF"}}>*/}
+            {/*            < LinkedInIcon fontSize={"large"} onClick={event => window.open(linkedInLink, "_blank")}/>*/}
+            {/*        </IconButton>*/}
+            {/*        /!*<IconButton>*!/*/}
+            {/*        /!*    <EmailIcon fontSize={"large"}/>*!/*/}
+            {/*        /!*</IconButton>*!/*/}
+            {/*    </List>*/}
+            {/*</Drawer>*/}
         </Box>
     );
 }
