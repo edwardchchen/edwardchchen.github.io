@@ -28,17 +28,16 @@ export default function WorkCard(props) {
 
     return (
         <Box sx={{color: "#66FCF1", borderBottom: 3}}>
-
             <Card style={cardStyle}>
                 <Grid container spacing={1}>
-                    <Grid item xs={2}>
+                    <Grid item lg={2}>
                         <CardMedia
                             component="img"
                             sx={{width: 90}}
                             image={props.image}
                         />
                     </Grid>
-                    <Grid item xs={10}>
+                    <Grid item lg={10}>
                         <Typography variant="subtitle1" align={"left"}>
                             {props.company}
                         </Typography>
@@ -59,7 +58,7 @@ export default function WorkCard(props) {
                             </ListItem>
                         )}
                     </List>
-                    <Grid item xs={12} align={"left"} sx={{marginBottom: "20px"}}>
+                    <Grid item lg={12} align={"left"} sx={{marginBottom: "20px"}}>
                         <Tag tags={props.tags}/>
                     </Grid>
 
