@@ -9,11 +9,12 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import {Avatar, Container, Grid, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import {Avatar, CardActionArea, Container, Grid, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
 import List from "@mui/material/List";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import {Tag} from "../Tag";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import Button from "@mui/material/Button";
 
 var cardStyle = {
     display: 'block',
@@ -31,11 +32,14 @@ export default function WorkCard(props) {
             <Card style={cardStyle}>
                 <Grid container spacing={1}>
                     <Grid item lg={2}>
-                        <CardMedia
-                            component="img"
-                            sx={{width: 90}}
-                            image={props.image}
-                        />
+                        <Button onClick={event => window.open(props.companyLink, "_blank")}>
+                            <CardMedia
+                                component="img"
+                                sx={{width: 90}}
+                                image={props.image}
+                            >
+                            </CardMedia>
+                        </Button>
                     </Grid>
                     <Grid item lg={10}>
                         <Typography variant="subtitle1" align={"left"}>
@@ -51,8 +55,8 @@ export default function WorkCard(props) {
                     <List align={"left"}>
                         {props.contents.map((bullet, index) =>
                             <ListItem align={"left"}>
-                                <ArrowRightIcon/>
-                                <Typography variant={"subtitle2"}>
+                                <FiberManualRecordIcon sx={{fontSize: 10}}/>
+                                <Typography variant={"subtitle2"} marginLeft={"20px"}>
                                     {bullet}
                                 </Typography>
                             </ListItem>

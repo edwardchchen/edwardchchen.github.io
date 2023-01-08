@@ -18,7 +18,7 @@ import Button from "@mui/material/Button";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const drawerWidth = 80;
+const drawerWidth = 0;
 const githubLink = process.env.REACT_APP_GITHUB_URL;
 const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
 

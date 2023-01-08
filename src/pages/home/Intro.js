@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 export default function Intro() {
     return (
         <div>
-            <Container sx={{marginTop: "15vh"}}>
+            <Container sx={{marginTop: "15vh", marginBottom: "5vh"}}>
                 <Grid container>
                     <Grid item xs={8}>
 
@@ -22,8 +22,9 @@ export default function Intro() {
                         </Grid>
                         <Grid item xs={10}>
                             <Typography component="h6" variant="h6" align="left" color="textPrimary" gutterBottom>
-                                I am a fifth year Computer Science student at The University of British Columbia,
-                                interested in cloud computing, web application development.
+                                I am currently a fifth year Computer Science student at The University of British
+                                Columbia. I have a strong interest in cloud computing and software development,
+                                and I am excited to begin exploring career opportunities in these fields.
                             </Typography>
                         </Grid>
                     </Grid>
