@@ -1,19 +1,13 @@
 import * as React from 'react';
-import {useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import {Avatar, Container, Grid, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import {Grid, ListItem} from "@mui/material";
 import List from "@mui/material/List";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import {Tag} from "../Tag";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import Button from "@mui/material/Button";
 
 var cardStyle = {
     display: 'block',
@@ -28,17 +22,19 @@ export default function WorkCard(props) {
 
     return (
         <Box sx={{color: "#66FCF1", borderBottom: 3}}>
-
             <Card style={cardStyle}>
                 <Grid container spacing={1}>
-                    <Grid item xs={2}>
-                        <CardMedia
-                            component="img"
-                            sx={{width: 90}}
-                            image={props.image}
-                        />
+                    <Grid item lg={2}>
+                        <Button onClick={() => window.open(props.companyLink, "_blank")}>
+                            <CardMedia
+                                component="img"
+                                sx={{width: 90}}
+                                image={props.image}
+                            >
+                            </CardMedia>
+                        </Button>
                     </Grid>
-                    <Grid item xs={10}>
+                    <Grid item lg={10}>
                         <Typography variant="subtitle1" align={"left"}>
                             {props.company}
                         </Typography>
@@ -50,16 +46,16 @@ export default function WorkCard(props) {
                         </Typography>
                     </Grid>
                     <List align={"left"}>
-                        {props.contents.map((bullet, index) =>
+                        {props.contents.map((bullet) =>
                             <ListItem align={"left"}>
-                                <ArrowRightIcon/>
-                                <Typography variant={"subtitle2"}>
+                                <FiberManualRecordIcon sx={{fontSize: 10}}/>
+                                <Typography variant={"subtitle2"} marginLeft={"20px"}>
                                     {bullet}
                                 </Typography>
                             </ListItem>
                         )}
                     </List>
-                    <Grid item xs={12} align={"left"} sx={{marginBottom: "20px"}}>
+                    <Grid item lg={12} align={"left"} sx={{marginBottom: "20px"}}>
                         <Tag tags={props.tags}/>
                     </Grid>
 

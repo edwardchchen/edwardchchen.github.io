@@ -12,7 +12,7 @@ var StyledButton = {
     '&:hover': {
         color: "#FFFFFF",
     },
-    textTransform: 'capitalize',
+    textTransform: 'none',
     fontSize: '11px',
     fontWeight: "500"
 
