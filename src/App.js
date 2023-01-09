@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import PermanentDrawerLeft from "./components/Sidebar";
 import {createTheme} from "@mui/material";
 import {ThemeProvider} from "@emotion/react";
+import Footer from "./pages/home/Footer";
 
 const themeDefault = createTheme({
     palette: {
@@ -24,6 +25,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
+                <Footer/>
+
             </div>
         </ThemeProvider>
 

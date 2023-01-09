@@ -11,7 +11,6 @@ export default function Home() {
             <WorkExperience/>
             <Project/>
             <Certifications/>
-
         </div>
     )
 

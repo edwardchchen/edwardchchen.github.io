@@ -11,9 +11,11 @@ export default function BadgeCard(props) {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    height="100"
+                    height="180"
                     image={props.image}
                     onClick={() => window.open(props.link, "_blank")}
+                    sx={{padding: "1em 1em 0 1em", objectFit: "contain"}}
+
                 />
                 <CardContent align={"left"}>
                     <Typography gutterBottom align={"left"} variant="h6" component="div" sx={{color: "#FFFFFF"}}>

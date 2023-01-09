@@ -46,7 +46,7 @@ export default function Project() {
                     <ProjectCard projectName={"Todo List"}
                                  image={todoList}
                                  contents={""} tags={["Java", "JavaFx", "JUnit", "OpenWeather API"]}
-                                 githubLink={"https://github.com/edwardchchen/Basketball-Database-Project"}/>
+                                 githubLink={"https://github.com/edwardchchen/ToDoList"}/>
                 </Grid>
 
             </Grid>
