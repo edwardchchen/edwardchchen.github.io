@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {HashRouter, Redirect, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Home from "./pages/home/Home";
 import PermanentDrawerLeft from "./components/Sidebar";
 import {createTheme} from "@mui/material";

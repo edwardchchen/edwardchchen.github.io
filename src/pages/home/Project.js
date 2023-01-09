@@ -17,32 +17,32 @@ export default function Project() {
                 Some things I've built
             </Typography>
             <Grid container spacing={3}>
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} md={4}>
                     <ProjectCard projectName={"UBC courses and room lookup"}
                                  image={campus_explorer}
                                  contents={""} tags={["Web", "React", "TypeScript", "JUnit", "REST API"]}
                                  githubLink={"https://github.com/edwardchchen/Campus-explorer"}/>
                 </Grid>
 
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} md={4}>
                     <ProjectCard projectName={"NBA Stats"}
                                  image={database_query}
                                  contents={""} tags={["Java", "Java Swing", "OracleDB", "SQL"]}
                                  githubLink={"https://github.com/edwardchchen/Basketball-Database-Project"}/>
                 </Grid>
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} md={4}>
                     <ProjectCard projectName={"Covid-19 cases counter"}
                                  image={covidTracker}
                                  contents={""} tags={["iOS", "Swift", "Charts", "SwiftyJson"]}
                                  githubLink={"https://github.com/edwardchchen/COVID-19-iOS"}/>
                 </Grid>
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} md={4}>
                     <ProjectCard projectName={"Drink Water"}
                                  image={drinkWater}
                                  contents={""} tags={["iOS", "Swift", "Mobile", "Notification"]}
                                  githubLink={"https://github.com/edwardchchen/DrinkWater"}/>
                 </Grid>
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} md={4}>
                     <ProjectCard projectName={"Todo List"}
                                  image={todoList}
                                  contents={""} tags={["Java", "JavaFx", "JUnit", "OpenWeather API"]}

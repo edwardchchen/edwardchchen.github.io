@@ -1,7 +1,5 @@
-import cat from "../../assets/cat.png"
-import {Container, Divider, Grid, Tabs, Typography} from "@mui/material";
+import {Container, Grid, Typography} from "@mui/material";
 import WorkCard from "../../components/cards/WorkCard";
-import VerticalTabs from "../../components/WorkTabPanel";
 import awsLogo from "../../assets/logos/awsLogo.png";
 import * as React from "react";
 import ubcLogo from "../../assets/logos/cicLogo.png";

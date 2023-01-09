@@ -22,19 +22,19 @@ export default function ProjectCard(props) {
                 <Typography gutterBottom align={"left"} variant="h5" component="div" sx={{color: "#FFFFFF"}}>
                     {props.projectName}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="white">
                     {props.contents}
                 </Typography>
                 <Tag tags={props.tags}/>
             </CardContent>
             <CardActions>
-                <IconButton size="large" sx={{color: "#FFFFFF"}}>
-                    <GitHubIcon onClick={event => window.open(props.githubLink, "_blank")}/>
-                </IconButton>
+                <Button sx={{color: "#FFFFFF", '&:hover': {color: '#171515',}}}>
+                    <GitHubIcon size="large" onClick={() => window.open(props.githubLink, "_blank")}/>
+                </Button>
                 {props.externalLink &&
-                <IconButton size="large" sx={{color: "#FFFFFF"}}>
-                    <IosShareIcon onClick={event => window.open(props.externalLink, "_blank")}/>
-                </IconButton>
+                    <IconButton size="large" sx={{color: "#FFFFFF"}}>
+                        <IosShareIcon onClick={() => window.open(props.externalLink, "_blank")}/>
+                    </IconButton>
                 }
 
 

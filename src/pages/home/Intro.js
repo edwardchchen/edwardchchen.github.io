@@ -1,4 +1,4 @@
-import {Container, Grid, Paper, Typography} from "@mui/material";
+import {Container, Grid, Typography} from "@mui/material";
 import goKart from "../../assets/go-kart.png";
 import CardMedia from "@mui/material/CardMedia";
 

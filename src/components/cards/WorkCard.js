@@ -1,17 +1,10 @@
 import * as React from 'react';
-import {useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import {Avatar, CardActionArea, Container, Grid, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
+import {Grid, ListItem} from "@mui/material";
 import List from "@mui/material/List";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import {Tag} from "../Tag";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import Button from "@mui/material/Button";
@@ -32,7 +25,7 @@ export default function WorkCard(props) {
             <Card style={cardStyle}>
                 <Grid container spacing={1}>
                     <Grid item lg={2}>
-                        <Button onClick={event => window.open(props.companyLink, "_blank")}>
+                        <Button onClick={() => window.open(props.companyLink, "_blank")}>
                             <CardMedia
                                 component="img"
                                 sx={{width: 90}}
@@ -53,7 +46,7 @@ export default function WorkCard(props) {
                         </Typography>
                     </Grid>
                     <List align={"left"}>
-                        {props.contents.map((bullet, index) =>
+                        {props.contents.map((bullet) =>
                             <ListItem align={"left"}>
                                 <FiberManualRecordIcon sx={{fontSize: 10}}/>
                                 <Typography variant={"subtitle2"} marginLeft={"20px"}>
