@@ -21,7 +21,6 @@ export default function WorkExperience() {
                         <WorkCard image={awsLogo} company={"Amazon Web Services"}
                                   jobTitle={"Professional Services Consultant Intern"} date={"Jun 2022 - Sep 2022"}
                                   contents={[" Built a secure Data Lake solution that contains a serverless ETL Pipeline, data warehouse and data visualization dashboard using AWS Glue, Redshift, S3, KMS and QuickSight.",
-                                      "The above solution can easily be deployed into another AWS account using AWS Cloudformation",
                                       "Developed technical consulting experience through training and mock customer meetings",
                                       "Successfully obtained AWS Developer Associate Certificate (DVA-C01)"]}
                                   tags={["AWS", "Severless"]}

@@ -18,17 +18,17 @@ const themeDefault = createTheme({
 });
 
 function App() {
-  return (
-      <ThemeProvider theme={themeDefault}>
-          <div className="App">
-              <PermanentDrawerLeft/>
-              <Routes>
-                  <Route path="/" element={<Home />}/>
-              </Routes>
-          </div>
-      </ThemeProvider>
+    return (
+        <ThemeProvider theme={themeDefault}>
+            <div className="App">
+                <PermanentDrawerLeft/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                </Routes>
+            </div>
+        </ThemeProvider>
 
-  );
+    );
 }
 
 export default App;
