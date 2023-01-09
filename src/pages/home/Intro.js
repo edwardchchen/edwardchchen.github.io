@@ -11,7 +11,7 @@ export default function Intro() {
 
                         <Grid item xs={12}>
                             <Typography component="h1" variant="h3" align="left" color="textPrimary" gutterBottom>
-                                Hi, my name is
+                                HELLO! I am
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>

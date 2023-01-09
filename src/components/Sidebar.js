@@ -12,11 +12,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import Navbar from "./Navbar";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import Resume from '../assets/files/resume.pdf';
 
 const drawerWidth = 0;
 const githubLink = process.env.REACT_APP_GITHUB_URL;
@@ -57,7 +58,10 @@ export default function PermanentDrawerLeft() {
                                 Edward Chen
                             </Typography>
                         </IconButton>
-                        <Button color="inherit">Resume</Button>
+                        <Button color="inherit" onClick={event => window.open(Resume, "_blank")}>
+                            Resume
+                        </Button>
+
                         <IconButton sx={{color: "#FFFFFF"}}>
                             <GitHubIcon fontSize={"large"} onClick={event => window.open(githubLink, "_blank")}
                             />

@@ -33,13 +33,13 @@ export default function Project() {
                 <Grid item xs={12} lg={4}>
                     <ProjectCard projectName={"Covid-19 cases counter"}
                                  image={covidTracker}
-                                 contents={""} tags={["IOS", "Swift", "Charts", "SwiftyJson"]}
+                                 contents={""} tags={["iOS", "Swift", "Charts", "SwiftyJson"]}
                                  githubLink={"https://github.com/edwardchchen/COVID-19-iOS"}/>
                 </Grid>
                 <Grid item xs={12} lg={4}>
                     <ProjectCard projectName={"Drink Water"}
                                  image={drinkWater}
-                                 contents={""} tags={["IOS", "Swift", "Mobile", "Notification"]}
+                                 contents={""} tags={["iOS", "Swift", "Mobile", "Notification"]}
                                  githubLink={"https://github.com/edwardchchen/DrinkWater"}/>
                 </Grid>
                 <Grid item xs={12} lg={4}>
