@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 export default function Intro() {
     return (
         <div>
-            <Container sx={{marginTop: "15vh", marginBottom: "5vh"}}>
+            <Container sx={{marginTop: "15vh"}}>
                 <Grid container>
                     <Grid item xs={8}>
 

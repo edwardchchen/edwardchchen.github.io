@@ -9,7 +9,7 @@ export default function WorkExperience() {
 
     return (
         <div>
-            <Container sx={{marginTop: "0vh", marginBottom: "5vh"}}>
+            <Container sx={{marginTop: "10vh"}}>
                 <Typography component="h3" variant="h4" align="left" color="textPrimary" gutterBottom
                             sx={{color: "#66FCF1"}}>
                     Where I have worked

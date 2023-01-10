@@ -7,7 +7,7 @@ import aws_soa_001 from "../../assets/badges/aws-certified-solutions-architect-a
 export default function Certifications() {
     return (
         <div>
-            <Container sx={{marginTop: "0vh", marginBottom: "5vh"}}>
+            <Container sx={{marginTop: "10vh"}}>
                 <Typography component="h3" variant="h4" align="left" color="textPrimary" gutterBottom
                             sx={{color: "#66FCF1"}}>
                     Certifications

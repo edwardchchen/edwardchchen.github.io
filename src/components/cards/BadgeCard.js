@@ -7,7 +7,7 @@ import {CardActionArea} from "@mui/material";
 
 export default function BadgeCard(props) {
     return (
-        <Card sx={{maxWidth: 345, backgroundColor: "#0c181f"}}>
+        <Card sx={{maxWidth: 380, backgroundColor: "#0c181f"}}>
             <CardActionArea>
                 <CardMedia
                     component="img"

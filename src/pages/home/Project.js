@@ -13,7 +13,7 @@ import student_connect_app from "../../assets/projectImages/student-connect-app.
 export default function Project() {
 
     return (
-        <Container sx={{marginTop: "20vh"}}>
+        <Container sx={{marginTop: "10vh"}}>
             <Typography component="h3" variant="h4" align="left" color="textPrimary" gutterBottom
                         sx={{color: "#66FCF1"}}>
                 Some things I've built
