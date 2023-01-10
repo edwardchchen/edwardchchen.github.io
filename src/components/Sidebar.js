@@ -61,7 +61,7 @@ export default function PermanentDrawerLeft() {
                             </Typography>
                         </Button>
 
-                        <Button sx={{color: "#FFFFFF", '&:hover': {color: '#171515',}}}>
+                        <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}>
                             <GitHubIcon fontSize={"large"} onClick={() => window.open(githubLink, "_blank")}/>
                         </Button>
                         <Button sx={{color: "#FFFFFF", '&:hover': {color: '#0077B5',}}}>
@@ -71,9 +71,7 @@ export default function PermanentDrawerLeft() {
                                 onClick={() => window.open(Resume, "_blank")}>
                             Resume
                         </Button>
-
                     </Toolbar>
-
                 </AppBar>
             </Box>
         </Box>
