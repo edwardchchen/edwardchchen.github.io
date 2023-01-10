@@ -61,11 +61,13 @@ export default function PermanentDrawerLeft() {
                             </Typography>
                         </Button>
 
-                        <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}>
-                            <GitHubIcon fontSize={"large"} onClick={() => window.open(githubLink, "_blank")}/>
+                        <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}
+                                onClick={() => window.open(githubLink, "_blank")}>
+                            <GitHubIcon fontSize={"large"}/>
                         </Button>
-                        <Button sx={{color: "#FFFFFF", '&:hover': {color: '#0077B5',}}}>
-                            < LinkedInIcon fontSize={"large"} onClick={() => window.open(linkedInLink, "_blank")}/>
+                        <Button sx={{color: "#FFFFFF", '&:hover': {color: '#0077B5',}}}
+                                onClick={() => window.open(linkedInLink, "_blank")}>
+                            < LinkedInIcon fontSize={"large"}/>
                         </Button>
                         <Button style={resumeBtn}
                                 onClick={() => window.open(Resume, "_blank")}>
