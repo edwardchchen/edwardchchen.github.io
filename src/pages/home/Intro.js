@@ -1,6 +1,4 @@
 import {Container, Grid, Typography} from "@mui/material";
-import goKart from "../../assets/go-kart.png";
-import CardMedia from "@mui/material/CardMedia";
 
 export default function Intro() {
     return (
@@ -11,15 +9,20 @@ export default function Intro() {
 
                         <Grid item xs={12}>
                             <Typography component="h1" variant="h3" align="left" color="textPrimary" gutterBottom>
-                                HELLO! I am
+                                Hi! My name is
                             </Typography>
-                        </Grid>
-                        <Grid item xs={12}>
                             <Typography component="h1" variant="h3" align="left" color="textPrimary" gutterBottom
                                         sx={{color: "#66FCF1"}}>
                                 Edward Chen
                             </Typography>
+                            <Typography component="h1" variant="h5" align="left" color="textPrimary" gutterBottom>
+                                I am a fifth year Computer Science student at The University of British Columbia,
+                                aspiring to become a Cloud Architect.
+                            </Typography>
+
                         </Grid>
+                        {/*<Grid item xs={12}>*/}
+                        {/*</Grid>*/}
                         {/*<Grid item xs={10}>*/}
                         {/*    <Typography component="h6" variant="h6" align="left" color="textPrimary" gutterBottom>*/}
                         {/*        I am currently a fifth year Computer Science student at The University of British*/}
@@ -28,9 +31,9 @@ export default function Intro() {
                         {/*    </Typography>*/}
                         {/*</Grid>*/}
                     </Grid>
-                    <Grid item xs={4}>
-                        <CardMedia sx={{height: "50vh", borderRadius: "15px"}} image={goKart}/>
-                    </Grid>
+                    {/*<Grid item xs={4}>*/}
+                    {/*    <CardMedia sx={{height: "50vh", borderRadius: "15px"}} image={goKart}/>*/}
+                    {/*</Grid>*/}
                 </Grid>
             </Container>
 
