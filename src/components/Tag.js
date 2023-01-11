@@ -6,7 +6,7 @@ var StyledButton = {
     border: 0,
     color: 'white',
     height: 20,
-    padding: '15px',
+    padding: '10px',
     marginRight: '5px',
     marginTop: '10px',
     '&:hover': {
