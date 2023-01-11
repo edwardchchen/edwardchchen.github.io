@@ -18,9 +18,31 @@ export default function AboutMe() {
 
                     <Grid item xs={8}>
                         <Grid item xs={10}>
-                            <Typography component="h6" variant="h6" align="left" color="textPrimary" gutterBottom>
-                                My interest in cloud computing started during my first internship in 2020.
+                            <Typography component="h6" variant="subtitle1" align="left" color="textPrimary"
+                                        gutterBottom>
+                                I first developed a fascination for cloud computing during my initial internship in
+                                2020, where I got the opportunity to work on Web applications using React and AWS. It
+                                was an enjoyable experience as it allowed me to see how cloud technology can provide
+                                software with a high level of flexibility and scalability.
                             </Typography>
+                            <Typography component="h6" variant="subtitle1" align="left" color="textPrimary"
+                                        gutterBottom>
+                                As of today, I possess a year of professional experience in creating cloud-native
+                                solutions utilizing AWS, as well as have obtained two AWS certifications. In the future,
+                                I aspire to expand my knowledge about a variety of cloud services, to advance my
+                                expertise in this field.
+                            </Typography>
+                            <Typography component="h6" variant="subtitle1" align="left" color="textPrimary"
+                                        gutterBottom>
+                                Aside from my professional pursuits, I am passionate about photography. I take pleasure
+                                in capturing different landscapes and cityscapes, and often find myself discovering new
+                                perspectives through my camera lens. Additionally, I am a car enthusiast, which is
+                                another hobby of mine. I derive enjoyment from various car-related activities such as
+                                motorsport and car reviews, as well as driving.
+
+
+                            </Typography>
+
                         </Grid>
                     </Grid>
                     <Grid item xs={4}>

@@ -38,10 +38,10 @@ export default function WorkCard(props) {
                         <Typography variant="subtitle1" align={"left"}>
                             {props.company}
                         </Typography>
-                        <Typography variant="subtitle2" align={"left"}>
+                        <Typography variant="subtitle1" align={"left"}>
                             {props.jobTitle}
                         </Typography>
-                        <Typography variant="subtitle2" align={"left"}>
+                        <Typography variant="subtitle1" align={"left"}>
                             {props.date}
                         </Typography>
                     </Grid>
@@ -49,7 +49,7 @@ export default function WorkCard(props) {
                         {props.contents.map((bullet) =>
                             <ListItem align={"left"}>
                                 <FiberManualRecordIcon sx={{fontSize: 10}}/>
-                                <Typography variant={"subtitle2"} marginLeft={"20px"}>
+                                <Typography variant={"subtitle1"} marginLeft={"20px"}>
                                     {bullet}
                                 </Typography>
                             </ListItem>
