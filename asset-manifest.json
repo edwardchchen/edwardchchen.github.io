@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/edwardchchen.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/edwardchchen.github.io/static/js/main.40760e81.js",
+    "main.js": "/edwardchchen.github.io/static/js/main.d995c0b4.js",
     "static/js/787.49138e18.chunk.js": "/edwardchchen.github.io/static/js/787.49138e18.chunk.js",
     "static/media/covidTracker.png": "/edwardchchen.github.io/static/media/covidTracker.6797ea380725bfa6b6a7.png",
     "static/media/go-kart.png": "/edwardchchen.github.io/static/media/go-kart.6066af8678e3eae1100a.png",
@@ -13,15 +13,15 @@
     "static/media/aws-certified-solutions-architect-associate.png": "/edwardchchen.github.io/static/media/aws-certified-solutions-architect-associate.380d20c8d47d52878d43.png",
     "static/media/aws-certified-developer-associate.png": "/edwardchchen.github.io/static/media/aws-certified-developer-associate.a06cdb9caf0a11996865.png",
     "static/media/nba-database-filter-by-players.png": "/edwardchchen.github.io/static/media/nba-database-filter-by-players.29d2e4bccc586150581f.png",
-    "static/media/resume.pdf": "/edwardchchen.github.io/static/media/resume.0a02d1c8409b54ce1404.pdf",
+    "static/media/resume.pdf": "/edwardchchen.github.io/static/media/resume.eb863fbe568ef7287d86.pdf",
     "static/media/todoList.png": "/edwardchchen.github.io/static/media/todoList.1a457ec5cb4aad42e860.png",
     "index.html": "/edwardchchen.github.io/index.html",
     "main.073c9b0a.css.map": "/edwardchchen.github.io/static/css/main.073c9b0a.css.map",
-    "main.40760e81.js.map": "/edwardchchen.github.io/static/js/main.40760e81.js.map",
+    "main.d995c0b4.js.map": "/edwardchchen.github.io/static/js/main.d995c0b4.js.map",
     "787.49138e18.chunk.js.map": "/edwardchchen.github.io/static/js/787.49138e18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.40760e81.js"
+    "static/js/main.d995c0b4.js"
   ]
 }
