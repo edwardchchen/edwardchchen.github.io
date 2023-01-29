@@ -11,7 +11,7 @@ export default function BadgeCard(props) {
                     component="img"
                     height="180"
                     image={props.image}
-                    sx={{padding: "1em 1em 0 1em", objectFit: "contain"}}
+                    sx={{padding: "1em 1em 1em 1em", objectFit: "contain"}}
 
                 />
                 {/*<CardContent align={"left"}>*/}
