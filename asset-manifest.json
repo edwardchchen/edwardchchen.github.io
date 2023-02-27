@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/edwardchchen.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/edwardchchen.github.io/static/js/main.be6a35c8.js",
+    "main.js": "/edwardchchen.github.io/static/js/main.678c7962.js",
     "static/js/496.3da03eb4.chunk.js": "/edwardchchen.github.io/static/js/496.3da03eb4.chunk.js",
+    "static/media/profilePic.jpg": "/edwardchchen.github.io/static/media/profilePic.7f8565096cfd9c7767bf.jpg",
     "static/media/covidTracker.png": "/edwardchchen.github.io/static/media/covidTracker.6797ea380725bfa6b6a7.png",
-    "static/media/go-kart.png": "/edwardchchen.github.io/static/media/go-kart.6066af8678e3eae1100a.png",
     "static/media/drinkWater.png": "/edwardchchen.github.io/static/media/drinkWater.5ab3901cdb39eca37785.png",
     "static/media/student-connect-app.png": "/edwardchchen.github.io/static/media/student-connect-app.cd5db881e752c8ea974c.png",
     "static/media/aws-location-screenshot.png": "/edwardchchen.github.io/static/media/aws-location-screenshot.d711d9aa2a237b4775bd.png",
@@ -18,11 +18,11 @@
     "static/media/edward-logo.png": "/edwardchchen.github.io/static/media/edward-logo.9d2da193e5b96f292aba.png",
     "index.html": "/edwardchchen.github.io/index.html",
     "main.073c9b0a.css.map": "/edwardchchen.github.io/static/css/main.073c9b0a.css.map",
-    "main.be6a35c8.js.map": "/edwardchchen.github.io/static/js/main.be6a35c8.js.map",
+    "main.678c7962.js.map": "/edwardchchen.github.io/static/js/main.678c7962.js.map",
     "496.3da03eb4.chunk.js.map": "/edwardchchen.github.io/static/js/496.3da03eb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.be6a35c8.js"
+    "static/js/main.678c7962.js"
   ]
 }
