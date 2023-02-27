@@ -1,7 +1,7 @@
 import {Container, Grid, Typography} from "@mui/material";
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
-import goKart from "../../assets/go-kart.png";
+import profilePic from "../../assets/profilePic.jpg";
 
 export default function AboutMe() {
     return (
@@ -45,8 +45,10 @@ export default function AboutMe() {
 
                         </Grid>
                     </Grid>
-                    <Grid item xs={4}>
-                        <CardMedia sx={{height: "50vh", borderRadius: "15px"}} image={goKart}/>
+                    <Grid item xs={8} md={4}>
+                        <CardMedia sx={{width: "50vh", borderRadius: "15px"}}>
+                            <img src={profilePic} width="100%" alt="Edward Chen - University of British Columbia - Amazon Web Services"/>
+                        </CardMedia>
                     </Grid>
                 </Grid>
             </Container>
