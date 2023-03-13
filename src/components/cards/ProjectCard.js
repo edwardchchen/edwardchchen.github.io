@@ -13,11 +13,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 export default function ProjectCard(props) {
     return (
         <Card sx={{maxWidth: 380, backgroundColor: "#0c181f"}}>
-            <CardMedia
-                component="img"
-                height="180"
-                image={props.image}
-            />
+            <CardMedia>
+                <img height="180" src={props.image}  alt={props.projectName}/>
+
+            </CardMedia>
             <Accordion sx={{
                 backgroundColor: "transparent",
                 border: "none"
