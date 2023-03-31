@@ -46,7 +46,7 @@ export default function AboutMe() {
                         </Grid>
                     </Grid>
                     <Grid item xs={8} md={4}>
-                        <CardMedia sx={{width: "45vh"}}>
+                        <CardMedia sx={{width: "40vw"}}>
                             <img src={profilePic} width="90%" alt="Edward Chen - University of British Columbia - Amazon Web Services"/>
                         </CardMedia>
                     </Grid>
