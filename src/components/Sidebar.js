@@ -8,13 +8,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import Resume from '../assets/files/resume.pdf';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import edwardLogo from "../assets/logos/edward-logo.png"
 
 const drawerWidth = 0;
 const githubLink = process.env.REACT_APP_GITHUB_URL;
 const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
 const email = process.env.REACT_APP_EMAIL;
-
+const instagramLink = process.env.REACT_APP_INSTAGRAM;
 var resumeBtn = {
     textTransform: 'none',
     fontSize: '15px',
@@ -78,6 +79,11 @@ export default function PermanentDrawerLeft() {
                                 onClick={() => window.open(linkedInLink, "_blank")}>
                             < LinkedInIcon fontSize={"large"}/>
                         </Button>
+                        <Button sx={{color: "#FFFFFF", '&:hover': {color: '#fd5949',}}}
+                                onClick={() => window.open(instagramLink, "_blank")}>
+                            < InstagramIcon fontSize={"large"}/>
+                        </Button>
+
                         <Button sx={{color: "#FFFFFF", '&:hover': {color: '#66FCF1',}}}
                                 onClick={() => window.location = "mailto:" + email}>
                             < EmailIcon fontSize={"large"}/>
