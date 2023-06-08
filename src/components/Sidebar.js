@@ -57,14 +57,20 @@ export default function PermanentDrawerLeft() {
                             edge="start"
                             color="inherit"
                             aria-label="menu"
-                            sx={{textTransform: 'none', color: "#FFFFFF", '&:hover': {color: '#66FCF1',}}}
+                            sx={{
+                                textTransform: 'none',
+                                color: "#FFFFFF",
+                                '&:hover': {color: '#66FCF1',},
+                                display: {xs: 'none', md: 'flex'}
+                            }}
                         >
                             <Box
                                 component="img"
                                 sx={{
-                                    height: 35,
-                                    width: 35,
-                                }}
+                                    height: 40,
+                                    width: 40,
+                                }
+                                }
                                 alt="Edward Logo"
                                 src={edwardLogo}
                             />
