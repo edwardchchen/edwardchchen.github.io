@@ -19,8 +19,7 @@ export default function Intro() {
                                 </Typography>
 
                                 <Typography component="h1" variant="h5" align="left" color="textPrimary" gutterBottom>
-                                    I am a fifth year Computer Science student at The University of British Columbia,
-                                    aspiring to become a Cloud Architect.
+                                    Cloud consultant @ Amazon Web Services / UBC alumni
                                 </Typography>
                             </Grid>
                         </Fade>

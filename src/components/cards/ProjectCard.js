@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
     return (
         <Card sx={{maxWidth: 380, backgroundColor: "#0c181f"}}>
             <CardMedia>
-                <img height="180" src={props.image}  alt={props.projectName}/>
+                <img height="180" src={props.image} alt={props.projectName}/>
 
             </CardMedia>
             <Accordion sx={{
@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
                     <Typography variant="h6">{props.projectName}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         {props.contents}
                     </Typography>
                 </AccordionDetails>

@@ -9,7 +9,7 @@ import {Tag} from "../Tag";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import Button from "@mui/material/Button";
 
-var cardStyle = {
+let cardStyle = {
     display: 'block',
     width: '60vw',
     backgroundColor: "#1F2833",

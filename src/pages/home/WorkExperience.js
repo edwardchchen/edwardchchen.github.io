@@ -17,6 +17,15 @@ export default function WorkExperience() {
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
                         <WorkCard image={awsLogo} company={"Amazon Web Services"}
+                                  jobTitle={"Professional Services Cloud Consultant"} date={"Jul 2023 - Current"}
+                                  contents={[]}
+                                  tags={[]}
+                                  companyLink={"https://aws.amazon.com/"}/>
+
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        <WorkCard image={awsLogo} company={"Amazon Web Services"}
                                   jobTitle={"Professional Services Consultant Intern"} date={"Jun 2022 - Sep 2022"}
                                   contents={[" Built a secure Data Lake solution that contains a serverless ETL Pipeline, data warehouse and data visualization dashboard using AWS Glue, Redshift, S3, KMS and QuickSight.",
                                       "Developed technical consulting experience through training and mock customer meetings",
