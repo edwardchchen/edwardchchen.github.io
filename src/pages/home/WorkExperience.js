@@ -17,7 +17,7 @@ export default function WorkExperience() {
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
                         <WorkCard image={awsLogo} company={"Amazon Web Services"}
-                                  jobTitle={"Professional Services Cloud Consultant"} date={"Current"}
+                                  jobTitle={"Professional Services Cloud Consultant"} date={"Jul 2023 - Current"}
                                   contents={[]}
                                   tags={[]}
                                   companyLink={"https://aws.amazon.com/"}/>
