@@ -19,7 +19,7 @@ export default function Intro() {
                                 </Typography>
 
                                 <Typography component="h1" variant="h5" align="left" color="textPrimary" gutterBottom>
-                                    Cloud consultant / UBC alumni
+                                    Cloud consultant @ Amazon Web Services / UBC alumni
                                 </Typography>
                             </Grid>
                         </Fade>
