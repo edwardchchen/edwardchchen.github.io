@@ -41,7 +41,7 @@ export default function Project() {
                                  image={campus_explorer}
                                  contents={"UBC Courses and Rooms Explorer is a ReactTS based web application. It allows users to access valuable data about courses, including class averages, standard deviations, and fail rates. Additionally, the app provides information about classrooms, such as seating capacity, room type, and descriptions. This app allows the users to make informed decisions about their academic pursuits."}
                                  tags={["Web", "ReactTS", "JUnit", "REST API"]}
-                                 githubLink={"https://github.com/edwardchchen/Campus-explorer"}/>
+                                 />
                 </Grid>
 
                 <Grid item xs={12} md={4}>
@@ -70,7 +70,7 @@ export default function Project() {
                                  image={todoList}
                                  contents={"The Todolist application is a simple yet effective tool for managing and organizing tasks. Written in Java, the app uses a JavaFx frontend to display upcoming tasks added by the user. "}
                                  tags={["Java", "JavaFx", "JUnit", "OpenWeather API"]}
-                                 githubLink={"https://github.com/edwardchchen/ToDoList"}/>
+                                 />
                 </Grid>
 
             </Grid>

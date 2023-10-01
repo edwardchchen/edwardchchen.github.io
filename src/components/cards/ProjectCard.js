@@ -47,10 +47,12 @@ export default function ProjectCard(props) {
 
             </CardContent>
             <CardContent align={"left"}>
-                <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}
-                        onClick={() => window.open(props.githubLink, "_blank")}>
-                    <GitHubIcon size="large"/>
-                </Button>
+                {props.githubLink &&
+                    <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}
+                            onClick={() => window.open(props.githubLink, "_blank")}>
+                        <GitHubIcon size="large"/>
+                    </Button>
+                }
                 {props.externalLink &&
                     <Button sx={{color: "#FFFFFF", '&:hover': {color: 'gray',}}}
                             onClick={() => window.open(props.externalLink, "_blank")}>
