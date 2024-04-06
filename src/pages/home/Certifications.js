@@ -4,7 +4,8 @@ import BadgeCard from "../../components/cards/BadgeCard";
 import aws_dva_001 from "../../assets/badges/aws-certified-developer-associate.png";
 import aws_soa_001 from "../../assets/badges/aws-certified-solutions-architect-associate.png";
 import aws_scp_002 from "../../assets/badges/aws-certified-security-specialty.png";
-import aws_soa_co2 from "../../assets/badges/aws-certified-sysops-administrator-associate.png";
+import aws_soa_c02 from "../../assets/badges/aws-certified-sysops-administrator-associate.png";
+import aws_sap_c02 from "../../assets/badges/aws-certified-solutions-architect-professional.png";
 export default function Certifications() {
   return (
     <div>
@@ -22,6 +23,19 @@ export default function Certifications() {
         <Grid container spacing={3}>
           <Grid item sm={6} md={4}>
             <BadgeCard
+                link={
+                  "https://www.credly.com/badges/f1dc9b85-9853-41f4-8de9-40fee7cec4d5/public_url"
+                }
+                image={aws_sap_c02}
+                title={"AWS Certified Solutions Architect – Professional"}
+                content={
+                  "Earners of this certification have an extensive understanding of designing technical strategies to accomplish specific business goals."
+                }
+            />
+          </Grid>
+
+          <Grid item sm={6} md={4}>
+            <BadgeCard
               link={
                 "https://www.credly.com/badges/079354bb-06ff-45e0-a143-2796c70f26a7/public_url"
               }
@@ -37,7 +51,7 @@ export default function Certifications() {
               link={
                 "https://www.credly.com/badges/b8644ec9-355e-47d8-823a-dad0c5491105/public_url"
               }
-              image={aws_soa_co2}
+              image={aws_soa_c02}
               title={"AWS Certified SysOps Administrator – Associate"}
               content={
                 "Earners of this certification have a comprehensive understanding on how to deploy, manage, and operate IT systems on the AWS Cloud. They demonstrated the ability to migrate on-premises workloads to AWS and monitor, scale, and secure systems on the AWS platform."
