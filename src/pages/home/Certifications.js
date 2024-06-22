@@ -6,6 +6,8 @@ import aws_soa_001 from "../../assets/badges/aws-certified-solutions-architect-a
 import aws_scp_002 from "../../assets/badges/aws-certified-security-specialty.png";
 import aws_soa_c02 from "../../assets/badges/aws-certified-sysops-administrator-associate.png";
 import aws_sap_c02 from "../../assets/badges/aws-certified-solutions-architect-professional.png";
+import aws_mls_c01 from "../../assets/badges/aws-certified-machine-learning-specialty.png"
+
 export default function Certifications() {
   return (
     <div>
@@ -46,6 +48,19 @@ export default function Certifications() {
               }
             />
           </Grid>
+          <Grid item sm={6} md={4}>
+            <BadgeCard
+                link={
+                  "https://www.credly.com/badges/4396604a-362d-4538-a552-c38e9046806a/public_url"
+                }
+                image={aws_mls_c01}
+                title={"AWS Certified Machine Learning – Specialty"}
+                content={
+                  "Earners of this certification have an in-depth understanding of AWS machine learning (ML) services. They demonstrated ability to build, train, tune, and deploy ML models using the AWS Cloud."
+                }
+            />
+          </Grid>
+
           <Grid item sm={6} md={4}>
             <BadgeCard
               link={
