@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/edwardchchen.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/edwardchchen.github.io/static/js/main.cbcf37b1.js",
+    "main.js": "/edwardchchen.github.io/static/js/main.bf25754e.js",
     "static/js/488.fbe2cbb3.chunk.js": "/edwardchchen.github.io/static/js/488.fbe2cbb3.chunk.js",
     "static/media/profilePic.jpg": "/edwardchchen.github.io/static/media/profilePic.7f8565096cfd9c7767bf.jpg",
     "static/media/covidTracker.png": "/edwardchchen.github.io/static/media/covidTracker.6797ea380725bfa6b6a7.png",
@@ -13,6 +13,7 @@
     "static/media/aws-certified-solutions-architect-associate.png": "/edwardchchen.github.io/static/media/aws-certified-solutions-architect-associate.380d20c8d47d52878d43.png",
     "static/media/aws-certified-developer-associate.png": "/edwardchchen.github.io/static/media/aws-certified-developer-associate.a06cdb9caf0a11996865.png",
     "static/media/aws-certified-solutions-architect-professional.png": "/edwardchchen.github.io/static/media/aws-certified-solutions-architect-professional.21b3b6922e93a0cf16da.png",
+    "static/media/aws-certified-machine-learning-specialty.png": "/edwardchchen.github.io/static/media/aws-certified-machine-learning-specialty.628b69468233f6fcc94c.png",
     "static/media/nba-database-filter-by-players.png": "/edwardchchen.github.io/static/media/nba-database-filter-by-players.29d2e4bccc586150581f.png",
     "static/media/aws-certified-security-specialty.png": "/edwardchchen.github.io/static/media/aws-certified-security-specialty.bc8bcb9dd2274bb534b5.png",
     "static/media/resume.pdf": "/edwardchchen.github.io/static/media/resume.03eb447226f8a89e19bf.pdf",
@@ -21,11 +22,11 @@
     "static/media/edward-logo.png": "/edwardchchen.github.io/static/media/edward-logo.9d2da193e5b96f292aba.png",
     "index.html": "/edwardchchen.github.io/index.html",
     "main.f855e6bc.css.map": "/edwardchchen.github.io/static/css/main.f855e6bc.css.map",
-    "main.cbcf37b1.js.map": "/edwardchchen.github.io/static/js/main.cbcf37b1.js.map",
+    "main.bf25754e.js.map": "/edwardchchen.github.io/static/js/main.bf25754e.js.map",
     "488.fbe2cbb3.chunk.js.map": "/edwardchchen.github.io/static/js/488.fbe2cbb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.cbcf37b1.js"
+    "static/js/main.bf25754e.js"
   ]
 }
