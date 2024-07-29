@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/edwardchchen.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/edwardchchen.github.io/static/js/main.bf25754e.js",
-    "static/js/488.fbe2cbb3.chunk.js": "/edwardchchen.github.io/static/js/488.fbe2cbb3.chunk.js",
+    "main.js": "/edwardchchen.github.io/static/js/main.7544affb.js",
+    "static/js/488.105f09f9.chunk.js": "/edwardchchen.github.io/static/js/488.105f09f9.chunk.js",
     "static/media/profilePic.jpg": "/edwardchchen.github.io/static/media/profilePic.7f8565096cfd9c7767bf.jpg",
     "static/media/covidTracker.png": "/edwardchchen.github.io/static/media/covidTracker.6797ea380725bfa6b6a7.png",
     "static/media/drinkWater.png": "/edwardchchen.github.io/static/media/drinkWater.5ab3901cdb39eca37785.png",
@@ -10,7 +10,9 @@
     "static/media/aws-location-screenshot.png": "/edwardchchen.github.io/static/media/aws-location-screenshot.d711d9aa2a237b4775bd.png",
     "static/media/room-explorer-query.png": "/edwardchchen.github.io/static/media/room-explorer-query.fe7eca8e832b1125162a.png",
     "static/media/awsLogo.png": "/edwardchchen.github.io/static/media/awsLogo.13300505fbf627f5c7b5.png",
+    "static/media/aws-certified-data-engineer-associate.png": "/edwardchchen.github.io/static/media/aws-certified-data-engineer-associate.06cd0d719e5210f691fe.png",
     "static/media/aws-certified-solutions-architect-associate.png": "/edwardchchen.github.io/static/media/aws-certified-solutions-architect-associate.380d20c8d47d52878d43.png",
+    "static/media/aws-certified-cloud-practitioner.png": "/edwardchchen.github.io/static/media/aws-certified-cloud-practitioner.4cdc6d11a32d2346eecf.png",
     "static/media/aws-certified-developer-associate.png": "/edwardchchen.github.io/static/media/aws-certified-developer-associate.a06cdb9caf0a11996865.png",
     "static/media/aws-certified-solutions-architect-professional.png": "/edwardchchen.github.io/static/media/aws-certified-solutions-architect-professional.21b3b6922e93a0cf16da.png",
     "static/media/aws-certified-machine-learning-specialty.png": "/edwardchchen.github.io/static/media/aws-certified-machine-learning-specialty.628b69468233f6fcc94c.png",
@@ -22,11 +24,11 @@
     "static/media/edward-logo.png": "/edwardchchen.github.io/static/media/edward-logo.9d2da193e5b96f292aba.png",
     "index.html": "/edwardchchen.github.io/index.html",
     "main.f855e6bc.css.map": "/edwardchchen.github.io/static/css/main.f855e6bc.css.map",
-    "main.bf25754e.js.map": "/edwardchchen.github.io/static/js/main.bf25754e.js.map",
-    "488.fbe2cbb3.chunk.js.map": "/edwardchchen.github.io/static/js/488.fbe2cbb3.chunk.js.map"
+    "main.7544affb.js.map": "/edwardchchen.github.io/static/js/main.7544affb.js.map",
+    "488.105f09f9.chunk.js.map": "/edwardchchen.github.io/static/js/488.105f09f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.bf25754e.js"
+    "static/js/main.7544affb.js"
   ]
 }
