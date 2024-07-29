@@ -36,7 +36,7 @@ export default function Intro() {
                   color="textPrimary"
                   gutterBottom
                 >
-                  Cloud consultant @ Amazon Web Services / UBC alumni
+                  Cloud consultant @ Amazon Web Services
                 </Typography>
               </Grid>
             </Fade>
