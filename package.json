@@ -4,7 +4,7 @@
   "homepage": "https://edwardchchen.github.io/edwardchchen.github.io",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.3",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.16.5",
