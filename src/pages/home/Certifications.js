@@ -110,6 +110,18 @@ export default function Certifications() {
               }
             />
           </Grid>
+          <Grid item sm={6} md={4}>
+                <BadgeCard
+                    link={
+                        "https://www.credly.com/badges/27c327c7-e362-4cad-9913-90cd7043e5cf/public_url"
+                    }
+                    image={aws_clf_c02}
+                    title={"AWS Certified AI Practitioner"}
+                    content={"Earners of this badge understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS."
+                    }
+                />
+            </Grid>
+
             <Grid item sm={6} md={4}>
                 <BadgeCard
                     link={
