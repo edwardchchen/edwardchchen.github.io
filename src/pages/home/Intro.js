@@ -22,9 +22,8 @@ export default function Intro() {
                   component="h1"
                   variant="h3"
                   align="left"
-                  color="textPrimary"
+                  color="primary"
                   gutterBottom
-                  sx={{ color: "#66FCF1" }}
                 >
                   Edward Chen
                 </Typography>
@@ -33,7 +32,7 @@ export default function Intro() {
                   component="h1"
                   variant="h5"
                   align="left"
-                  color="textPrimary"
+                  color="primary"
                   gutterBottom
                 >
                   Cloud consultant @ Amazon Web Services
