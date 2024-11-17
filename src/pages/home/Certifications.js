@@ -9,6 +9,7 @@ import aws_sap_c02 from "../../assets/badges/aws-certified-solutions-architect-p
 import aws_mls_c01 from "../../assets/badges/aws-certified-machine-learning-specialty.png"
 import aws_de1_c01 from "../../assets/badges/aws-certified-data-engineer-associate.png"
 import aws_clf_c02 from "../../assets/badges/aws-certified-cloud-practitioner.png"
+import aws_aif_c01 from "../../assets/badges/aws-certified-ai-practitioner.png"
 export default function Certifications() {
   return (
     <div>
@@ -115,7 +116,7 @@ export default function Certifications() {
                     link={
                         "https://www.credly.com/badges/27c327c7-e362-4cad-9913-90cd7043e5cf/public_url"
                     }
-                    image={aws_clf_c02}
+                    image={aws_aif_c01}
                     title={"AWS Certified AI Practitioner"}
                     content={"Earners of this badge understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS."
                     }
