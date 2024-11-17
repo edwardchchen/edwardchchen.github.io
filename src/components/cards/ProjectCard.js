@@ -12,41 +12,86 @@ import LanguageIcon from "@mui/icons-material/Language";
 
 export default function ProjectCard(props) {
   return (
-    <Card sx={{ maxWidth: 380, backgroundColor: "#0c181f" }}>
+    <Card 
+      sx={{ 
+        maxWidth: 380, 
+        backgroundColor: "#FFFFFF",
+        borderRadius: "16px",
+        boxShadow: "0 4px 20px rgba(249, 115, 22, 0.1)",
+        transition: "all 0.3s ease-in-out",
+        "&:hover": {
+          transform: "translateY(-8px)",
+          boxShadow: "0 8px 32px rgba(249, 115, 22, 0.15)",
+        },
+      }}
+    >
       <CardMedia>
-        <img height="180" src={props.image} alt={props.projectName} />
+        <img 
+          height="180" 
+          src={props.image} 
+          alt={props.projectName}
+          style={{ 
+            width: "100%",
+            objectFit: "cover",
+            borderTopLeftRadius: "16px",
+            borderTopRightRadius: "16px"
+          }} 
+        />
       </CardMedia>
       <Accordion
         sx={{
           backgroundColor: "transparent",
           border: "none",
+          boxShadow: "none",
+          "&:before": {
+            display: "none" // Removes the default divider
+          }
         }}
         align={"left"}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={<ExpandMoreIcon style={{ color: "#F97316" }} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography variant="h6">{props.projectName}</Typography>
+          <Typography 
+            variant="h6" 
+            sx={{ 
+              color: "#292524",
+              fontWeight: 600
+            }}
+          >
+            {props.projectName}
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="body1">{props.contents}</Typography>
+          <Typography 
+            variant="body1"
+            sx={{ color: "#57534E" }}
+          >
+            {props.contents}
+          </Typography>
         </AccordionDetails>
       </Accordion>
-      {/*<Typography gutterBottom align={"left"} variant="h5" component="div" sx={{color: "#FFFFFF"}}>*/}
-      {/*    {props.projectName}*/}
-      {/*</Typography>*/}
-      {/*<Typography variant="body2" color="white">*/}
-      {/*    {props.contents}*/}
-      {/*</Typography>*/}
       <CardContent align={"left"}>
         <Tag tags={props.tags} />
       </CardContent>
-      <CardContent align={"left"}>
+      <CardContent 
+        align={"left"}
+        sx={{
+          display: "flex",
+          gap: "8px"
+        }}
+      >
         {props.githubLink && (
           <Button
-            sx={{ color: "#FFFFFF", "&:hover": { color: "gray" } }}
+            sx={{ 
+              color: "#292524",
+              "&:hover": { 
+                color: "#F97316",
+                backgroundColor: "rgba(249, 115, 22, 0.04)"
+              }
+            }}
             onClick={() => window.open(props.githubLink, "_blank")}
           >
             <GitHubIcon size="large" />
@@ -54,7 +99,13 @@ export default function ProjectCard(props) {
         )}
         {props.externalLink && (
           <Button
-            sx={{ color: "#FFFFFF", "&:hover": { color: "gray" } }}
+            sx={{ 
+              color: "#292524",
+              "&:hover": { 
+                color: "#F97316",
+                backgroundColor: "rgba(249, 115, 22, 0.04)"
+              }
+            }}
             onClick={() => window.open(props.externalLink, "_blank")}
           >
             <LanguageIcon size="large" />
