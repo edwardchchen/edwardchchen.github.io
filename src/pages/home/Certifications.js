@@ -6,39 +6,35 @@ import aws_soa_001 from "../../assets/badges/aws-certified-solutions-architect-a
 import aws_scp_002 from "../../assets/badges/aws-certified-security-specialty.png";
 import aws_soa_c02 from "../../assets/badges/aws-certified-sysops-administrator-associate.png";
 import aws_sap_c02 from "../../assets/badges/aws-certified-solutions-architect-professional.png";
-import aws_mls_c01 from "../../assets/badges/aws-certified-machine-learning-specialty.png";
-import aws_de1_c01 from "../../assets/badges/aws-certified-data-engineer-associate.png";
-import aws_clf_c02 from "../../assets/badges/aws-certified-cloud-practitioner.png";
-import aws_aif_c01 from "../../assets/badges/aws-certified-ai-practitioner.png";
-
+import aws_mls_c01 from "../../assets/badges/aws-certified-machine-learning-specialty.png"
+import aws_de1_c01 from "../../assets/badges/aws-certified-data-engineer-associate.png"
+import aws_clf_c02 from "../../assets/badges/aws-certified-cloud-practitioner.png"
+import aws_aif_c01 from "../../assets/badges/aws-certified-ai-practitioner.png"
 export default function Certifications() {
   return (
-    <div style={{ backgroundColor: '#FFFBF5' }}> {/* Added warm white background */}
+    <div>
       <Container sx={{ marginTop: "10vh" }}>
         <Typography
           component="h3"
           variant="h4"
           align="left"
-          sx={{ 
-            color: "#F97316", // Terracotta color
-            fontWeight: 600,
-            marginBottom: "2rem"
-          }}
+          color="textPrimary"
           gutterBottom
+          sx={{ color: "#66FCF1" }}
         >
           Certifications
         </Typography>
         <Grid container spacing={3}>
           <Grid item sm={6} md={4}>
             <BadgeCard
-              link={
-                "https://www.credly.com/badges/f1dc9b85-9853-41f4-8de9-40fee7cec4d5/public_url"
-              }
-              image={aws_sap_c02}
-              title={"AWS Certified Solutions Architect – Professional"}
-              content={
-                "Earners of this certification have an extensive understanding of designing technical strategies to accomplish specific business goals."
-              }
+                link={
+                  "https://www.credly.com/badges/f1dc9b85-9853-41f4-8de9-40fee7cec4d5/public_url"
+                }
+                image={aws_sap_c02}
+                title={"AWS Certified Solutions Architect – Professional"}
+                content={
+                  "Earners of this certification have an extensive understanding of designing technical strategies to accomplish specific business goals."
+                }
             />
           </Grid>
 
@@ -54,32 +50,29 @@ export default function Certifications() {
               }
             />
           </Grid>
-
           <Grid item sm={6} md={4}>
             <BadgeCard
-              link={
-                "https://www.credly.com/badges/4396604a-362d-4538-a552-c38e9046806a/public_url"
-              }
-              image={aws_mls_c01}
-              title={"AWS Certified Machine Learning – Specialty"}
-              content={
-                "Earners of this certification have an in-depth understanding of AWS machine learning (ML) services. They demonstrated ability to build, train, tune, and deploy ML models using the AWS Cloud."
-              }
+                link={
+                  "https://www.credly.com/badges/4396604a-362d-4538-a552-c38e9046806a/public_url"
+                }
+                image={aws_mls_c01}
+                title={"AWS Certified Machine Learning – Specialty"}
+                content={
+                  "Earners of this certification have an in-depth understanding of AWS machine learning (ML) services. They demonstrated ability to build, train, tune, and deploy ML models using the AWS Cloud."
+                }
             />
           </Grid>
-
-          <Grid item sm={6} md={4}>
-            <BadgeCard
-              link={
-                "https://www.credly.com/badges/5823f8ee-4bd1-4b5f-aa03-f6e1a1f62e32/public_url"
-              }
-              image={aws_de1_c01}
-              title={"AWS Certified Data Engineer - Associate"}
-              content={
-                "Earners of this certification have an in-depth understanding of how to use AWS services to implement data pipelines and to monitor, troubleshoot, and optimize cost and performance issues in accordance with best practices."
-              }
-            />
-          </Grid>
+            <Grid item sm={6} md={4}>
+                <BadgeCard
+                    link={
+                        "https://www.credly.com/badges/5823f8ee-4bd1-4b5f-aa03-f6e1a1f62e32/public_url"
+                    }
+                    image={aws_de1_c01}
+                    title={"AWS Certified Data Engineer - Associate"}
+                    content={"Earners of this certification have an in-depth understanding of how to use AWS services to implement data pipelines and to monitor, troubleshoot, and optimize cost and performance issues in accordance with best practices."
+                    }
+                />
+            </Grid>
 
           <Grid item sm={6} md={4}>
             <BadgeCard
@@ -106,7 +99,6 @@ export default function Certifications() {
               }
             />
           </Grid>
-
           <Grid item sm={6} md={4}>
             <BadgeCard
               link={
@@ -119,32 +111,30 @@ export default function Certifications() {
               }
             />
           </Grid>
-
           <Grid item sm={6} md={4}>
-            <BadgeCard
-              link={
-                "https://www.credly.com/badges/27c327c7-e362-4cad-9913-90cd7043e5cf/public_url"
-              }
-              image={aws_aif_c01}
-              title={"AWS Certified AI Practitioner"}
-              content={
-                "Earners of this badge understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS."
-              }
-            />
-          </Grid>
+                <BadgeCard
+                    link={
+                        "https://www.credly.com/badges/27c327c7-e362-4cad-9913-90cd7043e5cf/public_url"
+                    }
+                    image={aws_aif_c01}
+                    title={"AWS Certified AI Practitioner"}
+                    content={"Earners of this badge understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS."
+                    }
+                />
+            </Grid>
 
-          <Grid item sm={6} md={4}>
-            <BadgeCard
-              link={
-                "https://www.credly.com/badges/cf95e170-db46-4011-949e-100db3de06c3/public_url"
-              }
-              image={aws_clf_c02}
-              title={"AWS Certified Cloud Practitioner"}
-              content={
-                "Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge."
-              }
-            />
-          </Grid>
+            <Grid item sm={6} md={4}>
+                <BadgeCard
+                    link={
+                        "https://www.credly.com/badges/cf95e170-db46-4011-949e-100db3de06c3/public_url"
+                    }
+                    image={aws_clf_c02}
+                    title={"AWS Certified Cloud Practitioner"}
+                    content={"Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge."
+                    }
+                />
+            </Grid>
+
         </Grid>
       </Container>
     </div>

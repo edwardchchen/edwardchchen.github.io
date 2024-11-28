@@ -5,7 +5,7 @@ import profilePic from "../../assets/profilePic.jpg";
 
 export default function AboutMe() {
   return (
-    <div style={{ backgroundColor: '#FFFBF5' }}> {/* Added warm white background */}
+    <div>
       <Container sx={{ marginTop: "10vh" }}>
         <Grid container>
           <Grid item xs={8}>
@@ -13,12 +13,9 @@ export default function AboutMe() {
               component="h3"
               variant="h4"
               align="left"
-              sx={{
-                color: "#F97316", // Terracotta color
-                fontWeight: 600,
-                marginBottom: "2rem"
-              }}
+              color="textPrimary"
               gutterBottom
+              sx={{ color: "#66FCF1" }}
             >
               About me
             </Typography>
@@ -30,10 +27,7 @@ export default function AboutMe() {
                 component="h6"
                 variant="subtitle1"
                 align="left"
-                sx={{
-                  color: "#292524", // Warm dark gray
-                  marginBottom: "1.5rem"
-                }}
+                color="textPrimary"
                 gutterBottom
               >
                 I first developed a fascination for cloud computing during my
@@ -47,10 +41,7 @@ export default function AboutMe() {
                 component="h6"
                 variant="subtitle1"
                 align="left"
-                sx={{
-                  color: "#292524", // Warm dark gray
-                  marginBottom: "1.5rem"
-                }}
+                color="textPrimary"
                 gutterBottom
               >
                 As of today, I possess a year of professional experience in
@@ -63,10 +54,7 @@ export default function AboutMe() {
                 component="h6"
                 variant="subtitle1"
                 align="left"
-                sx={{
-                  color: "#292524", // Warm dark gray
-                  marginBottom: "1.5rem"
-                }}
+                color="textPrimary"
                 gutterBottom
               >
                 Aside from my professional pursuits, I am passionate about
@@ -80,25 +68,11 @@ export default function AboutMe() {
             </Grid>
           </Grid>
           <Grid item xs={8} md={4}>
-            <CardMedia
-              sx={{
-                width: "25vw", // Reduced from 35vw to 25vw
-                margin: "0 auto", // Center the image
-                '& img': {
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 20px rgba(249, 115, 22, 0.1)',
-                  transition: 'transform 0.3s ease-in-out',
-                  '&:hover': {
-                    transform: 'scale(1.02)'
-                  }
-                }
-              }}
-            >
+            <CardMedia sx={{ width: "35vw" }}>
               <img
                 src={profilePic}
-                width="80%" // Reduced from 90% to 80%
+                width="90%"
                 alt="Edward Chen - University of British Columbia - Amazon Web Services"
-                style={{ display: 'block', margin: '0 auto' }} // Ensure image is centered
               />
             </CardMedia>
           </Grid>

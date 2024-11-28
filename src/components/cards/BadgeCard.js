@@ -1,67 +1,40 @@
+import * as React from "react";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea, Box } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 
 export default function BadgeCard(props) {
   return (
-    <Card 
-      sx={{
-        height: "100%",
-        backgroundColor: "#FFFFFF",
-        borderRadius: "16px",
-        boxShadow: "0 4px 20px rgba(249, 115, 22, 0.1)",
-        transition: "all 0.3s ease-in-out",
-        "&:hover": {
-          transform: "translateY(-8px)",
-          boxShadow: "0 8px 32px rgba(249, 115, 22, 0.15)",
-        },
-      }}
+    <Card
+      sx={{ maxWidth: 380, backgroundColor: "transparent", boxShadow: "none" }}
     >
-      <CardActionArea
-        onClick={() => window.open(props.link, "_blank")}
-        sx={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            padding: "24px",
-          }}
-        >
-          <CardMedia
-            component="img"
-            image={props.image}
-            alt={props.title}
-            sx={{
-              width: "180px",
-              height: "180px",
-              objectFit: "contain",
-            }}
-          />
-        </Box>
-        <CardContent sx={{ padding: "0 24px 24px 24px" }}>
-          <Typography 
-            gutterBottom 
-            variant="h6" 
-            component="div"
-            sx={{
-              color: "#F97316",
-              fontWeight: 600,
-              textAlign: "center",
-              marginBottom: "16px",
-            }}
-          >
-            {props.title}
-          </Typography>
-        </CardContent>
+      <CardActionArea onClick={() => window.open(props.link, "_blank")}>
+        <CardMedia
+          component="img"
+          height="180"
+          image={props.image}
+          sx={{ padding: "1em 1em 1em 1em", objectFit: "contain" }}
+        />
+        {/*<CardContent align={"left"}>*/}
+        {/*<Typography gutterBottom align={"left"} variant="h6" component="div" sx={{color: "#FFFFFF"}}>*/}
+        {/*    {props.title}*/}
+        {/*</Typography>*/}
+        {/*<Typography variant="body2" color="text.secondary" sx={{color: "#FFFFFF"}}>*/}
+        {/*    {props.content}*/}
+        {/*</Typography>*/}
+        {/*</CardContent>*/}
       </CardActionArea>
+
+      {/*<CardActions>*/}
+      {/*    <IconButton size="large" sx={{color: "#FFFFFF"}}>*/}
+      {/*        <GitHubIcon onClick={event => window.open(props.githubLink, "_blank")}/>*/}
+      {/*    </IconButton>*/}
+      {/*    {props.externalLink &&*/}
+      {/*        <IconButton size="large" sx={{color: "#FFFFFF"}}>*/}
+      {/*            <IosShareIcon onClick={event => window.open(props.externalLink, "_blank")}/>*/}
+      {/*        </IconButton>*/}
+      {/*    }*/}
+      {/*</CardActions>*/}
     </Card>
   );
 }

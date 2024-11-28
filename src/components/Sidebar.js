@@ -16,75 +16,60 @@ const githubLink = process.env.REACT_APP_GITHUB_URL;
 const linkedInLink = process.env.REACT_APP_LINKEDIN_URL;
 const email = process.env.REACT_APP_EMAIL;
 const instagramLink = process.env.REACT_APP_INSTAGRAM;
-
-const resumeBtn = {
+var resumeBtn = {
   textTransform: "none",
-  fontSize: "16px",
+  fontSize: "15px",
   fontWeight: "500",
-  background: "#F97316",
-  marginLeft: "20px",
-  borderRadius: "12px",
+  background: "#45A29E",
+  marginLeft: "13px",
+  borderRadius: 3,
   border: 0,
   color: "white",
-  padding: "10px 24px",
-  "&:hover": { 
-    background: "#FB923C",
-    transform: "translateY(-2px)",
-    transition: "all 0.3s ease-in-out"
-  },
-};
-
-const iconButtonStyle = {
-  color: "#292524",
-  margin: "0 8px",
-  padding: "12px",
-  borderRadius: "12px",
-  backgroundColor: "#FFF7ED",
-  "&:hover": { 
-    backgroundColor: "#FED7AA",
-    transform: "translateY(-2px)",
-    transition: "all 0.3s ease-in-out"
-  }
+  "&:hover": { color: "black" },
 };
 
 export default function PermanentDrawerLeft() {
+  // const [open, setOpen] = React.useState(false);
+
+  // const handleDrawerOpen = () => {
+  //     setOpen(true);
+  // };
+  //
+  // const handleDrawerClose = () => {
+  //     setOpen(false);
+  // };
+
   return (
-    <Box sx={{ display: "flex", backgroundColor: "#FFF7ED" }}>
+    <Box sx={{ display: "flex", backgroundColor: "#1F2833" }}>
       <CssBaseline />
-      <Box sx={{ flexGrow: 1, backgroundColor: "#FFF7ED" }}>
+      <Box sx={{ flexGrow: 1, backgroundColor: "#1F2833" }}>
         <AppBar
           position="fixed"
           sx={{
             width: `calc(100% - ${drawerWidth}px)`,
             ml: `${drawerWidth}px`,
-            backgroundColor: "#FED7AA",
-            boxShadow: "0 4px 20px rgba(249, 115, 22, 0.1)",
-            height: "80px", // Increased height
-            display: "flex",
-            justifyContent: "center",
+            backgroundColor: "#1F2833",
+            boxShadow: "None",
           }}
         >
-          <Toolbar sx={{ height: "100%" }}>
+          <Toolbar>
             <Button
               size="large"
               edge="start"
+              color="inherit"
               aria-label="menu"
               sx={{
                 textTransform: "none",
-                color: "#292524",
-                marginRight: "20px",
-                "&:hover": { 
-                  transform: "translateY(-2px)",
-                  transition: "all 0.3s ease-in-out"
-                },
+                color: "#FFFFFF",
+                "&:hover": { color: "#66FCF1" },
                 display: { xs: "none", md: "flex" },
               }}
             >
               <Box
                 component="img"
                 sx={{
-                  height: 45,
-                  width: 45,
+                  height: 40,
+                  width: 40,
                 }}
                 alt="Edward Logo"
                 src={edwardLogo}
@@ -92,57 +77,33 @@ export default function PermanentDrawerLeft() {
             </Button>
 
             <Button
-              sx={{ 
-                ...iconButtonStyle,
-                "&:hover": { 
-                  ...iconButtonStyle["&:hover"],
-                  color: "#292524",
-                }
-              }}
+              sx={{ color: "#FFFFFF", "&:hover": { color: "gray" } }}
               onClick={() => window.open(githubLink, "_blank")}
             >
-              <GitHubIcon sx={{ fontSize: 28 }} />
+              <GitHubIcon fontSize={"large"} />
             </Button>
             <Button
-              sx={{ 
-                ...iconButtonStyle,
-                "&:hover": { 
-                  ...iconButtonStyle["&:hover"],
-                  color: "#0077B5",
-                }
-              }}
+              sx={{ color: "#FFFFFF", "&:hover": { color: "#0077B5" } }}
               onClick={() => window.open(linkedInLink, "_blank")}
             >
-              <LinkedInIcon sx={{ fontSize: 28 }} />
+              <LinkedInIcon fontSize={"large"} />
             </Button>
             <Button
-              sx={{ 
-                ...iconButtonStyle,
-                "&:hover": { 
-                  ...iconButtonStyle["&:hover"],
-                  color: "#fd5949",
-                }
-              }}
+              sx={{ color: "#FFFFFF", "&:hover": { color: "#fd5949" } }}
               onClick={() => window.open(instagramLink, "_blank")}
             >
-              <InstagramIcon sx={{ fontSize: 28 }} />
+              <InstagramIcon fontSize={"large"} />
             </Button>
 
             <Button
-              sx={{ 
-                ...iconButtonStyle,
-                "&:hover": { 
-                  ...iconButtonStyle["&:hover"],
-                  color: "#F97316",
-                }
-              }}
+              sx={{ color: "#FFFFFF", "&:hover": { color: "#66FCF1" } }}
               onClick={() => (window.location = "mailto:" + email)}
             >
-              <EmailIcon sx={{ fontSize: 28 }} />
+              <EmailIcon fontSize={"large"} />
             </Button>
 
             <Button
-              sx={resumeBtn}
+              style={resumeBtn}
               onClick={() => window.open(Resume, "_blank")}
             >
               Resume
